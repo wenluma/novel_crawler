@@ -1,5 +1,5 @@
 from selenium import webdriver
-from page_37 import SoupItemTable37
+from page_tl import SoupItemTableTL
 import os
 
 def setup_chrome_browser(url: str, time: float=5) -> str:
@@ -22,8 +22,10 @@ def setup_chrome_browser(url: str, time: float=5) -> str:
 def main():
     # 目标网站的URL
     url = 'https://www.tzkczc.com/19_19581/'
-    item = SoupItemTable37(setup_chrome_browser, url)
+    print(f'start: {url}')
+    item = SoupItemTableTL(setup_chrome_browser, url, test=True)
     item.parser()
+    print('done')
 
 if __name__ == "__main__":
     main()
