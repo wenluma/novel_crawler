@@ -1,0 +1,23 @@
+uri37:
+  start: 0
+  save_dir_name: tmp
+  table:
+    - cls: listmain
+      type: div
+    - cls: chapter-content
+      type: div
+  chapter:
+    type: id
+    id: content
+uriTL:
+  uri: 'https://www.tzkczc.com/19_19581/'
+  start: 492
+  end: 999
+  test: false
+  save_dir_name: tmp
+  table:
+    - type: id
+      id: dd
+  chapter:
+    type: id
+    id: content
