@@ -46,7 +46,7 @@ def create_dir_if_needed(dir_name):
 
 
 if __name__ == "__main__":
-    key = 'uriTL'
+    key = 'TL'
     yaml_data = open_yaml()
     single = yaml_data[key]
     create_dir_if_needed(single['save_dir_name'])
